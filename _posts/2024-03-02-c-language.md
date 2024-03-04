@@ -1,8 +1,8 @@
 ---
 title: C 프로그래밍 - C 언어의 개요
 date: 2024-03-02 23:23:00 +0900
-categories: [Blogging, CS]
-tags: [cs]
+categories: [Blogging, C]
+tags: [c]
 pin: true
 published: true
 ---
