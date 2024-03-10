@@ -71,14 +71,76 @@ published: true
 <br>
 
 크게 **코딩 -> 컴파일 -> 링킹** 이라는 3단계의 변환 과정을 거쳐 완성됨.  
-1. 코딩 - 소스 코드를 작성하여 소스 파일을 생성하는 과정
-2. 컴파일 - 소스 파일이 목적 파일로 변환되는 과정
-3. 링킹 - 링커를 통해 목적 파일을 실행 파일로 변환하는 과정  
+1. 코딩(coding) - 소스코드(source code)를 작성하여 소스파일(source file)을 생성하는 과정
+2. 컴파일(compile) - 소스파일이 목적파일(object file)로 변환되는 과정
+3. 링킹(linking) - 링커를 통해 목적파일을 실행파일(execution file)로 변환하는 과정  
+
+
+## C 프로그램의 완성 과정
+
+![IMG_E826B83E733E-1](https://github.com/jinjoocha/Programmers/assets/153695091/f12a983d-ee8d-4a01-8b8f-4bbbfd668316){: width="300" height="400" }
+
+![IMG_CCFA59652752-1](https://github.com/jinjoocha/Programmers/assets/153695091/ba69960e-21cc-48f3-a242-c109d0a0d68e){: width="700" height="600" }
+
+
+## C 프로그램의 기본 구조
+- 반드시 하나 이상의 함수를 포함해야 함
+- `main()` 함수가 반드시 존재해야 함
+- 함수의 시작과 끝을 알리는 중괄호 `{}` 를 사용해야 함
+- 중괄호 안에는 변수선언문, 치환문, 연산문, 함수 등의 명령을 기입함
+- 선행처리기(preprocessor)를 제외하고, 문장의 끝에는 세미콜론 `;`을 붙임
+
+## C 프로그램의 구성 요소
+- 예약어 : int, char, if, for, ...
+- 명칭 : 변수, 배열, 함수, ... 등의 이름
+- 상수 : 값이 불변인 자료
+- 연산자 : =, -, ++, *, /, ...
+- 설명문(주석) : 프로그램에 대한 주석
+
+### C언어 예약어 (reserved word)
+- 자료형 관련
+: char, int, float, short, long, double, unsigned, union, enum, void, ...
+- 기억 관련
+: auto, static, extern, register, ...
+- 제어 관련
+: if ~ else, for, while, do ~ while, switch ~ case, break, continue, return, ...
+- 기타
+: main, sizeof, include, ...
+
+### 명칭 (identifier)
+규칙을 지키자!
+- 영문자와 숫자의 조합으로 만듦
+- 첫 문자는 영문자나 밑줄 `_` 이어야 함
+- 특수문자 사용금지 (밑줄은 가능~!)
+- 문자 사이에 공백 금지
+- 예약어 금지
+- 영문자 대문자와 소문자는 서로 구별하여 사용
+- 명칭의 길이는 컴파일러에 따라 차이가 있음 (일반적으로 32자까지 인식가능)
+
+
+| 올바른 명칭           | 비 고              |
+|:-------------------|:-----------------:|
+| sun10              | 영문자와 숫자 조합 가능 |
+| SUN10              | sun10과는 다른 명칭   |
+| For                | 예약어 for과는 다름   |
+| _sum               | 밑줄 사용 가능       |
+
+| 잘못된 명칭           | 비 고               |
+|:-------------------|:------------------:|
+| 2m                 | 숫자로 시작 불가       |
+| KBS@TV             | 특수문자 사용 불가      |
+| for                | 예약어 사용 불가       |
+| SUN 10             | 문자 사이 공백 사용 불가 |
+
+
+![스크린샷 2024-03-10 오후 4 41 16](https://github.com/jinjoocha/basic_study/assets/153695091/a85af21a-3911-4379-be93-4449ac86cf50){: width="700" height="600" }
+
+
 
 ㄱㄱ~!
 
 
-## 테스트 해봄~!
+## 테스트
 
 ```c
 #include <stdio.h>
